@@ -1,0 +1,77 @@
+/* Import Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+@layer base {
+  html {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-gray-50 text-gray-900;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+}
+
+/* Custom component styles */
+@layer components {
+  .btn-primary {
+    @apply bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg shadow hover:bg-blue-700 transition duration-200;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-600 text-white font-semibold py-2 px-4 rounded-lg shadow hover:bg-gray-700 transition duration-200;
+  }
+
+  .btn-danger {
+    @apply bg-red-600 text-white font-semibold py-2 px-4 rounded-lg shadow hover:bg-red-700 transition duration-200;
+  }
+
+  .form-input {
+    @apply w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+  }
+
+  .form-label {
+    @apply block text-sm font-medium text-gray-700 mb-1;
+  }
+
+  .card {
+    @apply bg-white p-4 rounded-lg shadow-md border border-gray-200;
+  }
+
+  .sidebar-link {
+    @apply flex items-center space-x-2 p-2 rounded-lg text-white hover:bg-gray-700 transition duration-150;
+  }
+
+  .sidebar-link-active {
+    @apply bg-gray-700;
+  }
+}
+
+/* Custom utilities */
+@layer utilities {
+  .scrollbar-thin {
+    @apply scrollbar scrollbar-thumb-gray-400 scrollbar-track-gray-200 scrollbar-thin;
+  }
+}
+
+/* Custom scrollbar styles */
+.scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 rounded-full;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  @apply bg-gray-200;
+}
