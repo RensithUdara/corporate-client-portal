@@ -5,6 +5,7 @@ import { Booking } from '../../types';
 const mockBookings: Booking[] = [
   { id: '1', bookingDate: '2025-03-24', pickupLocation: 'Office A', dropoffLocation: 'Airport', vehicleType: 'Sedan', passengers: 2, status: 'Pending' },
   { id: '2', bookingDate: '2025-03-25', pickupLocation: 'Hotel B', dropoffLocation: 'Office A', vehicleType: 'SUV', passengers: 4, status: 'Approved' },
+  { id: '3', bookingDate: '2025-03-25', pickupLocation: 'Hotel B', dropoffLocation: 'Office A', vehicleType: 'SUV', passengers: 4, status: 'Approved' },
 ];
 
 export default function BookingsPage() {
