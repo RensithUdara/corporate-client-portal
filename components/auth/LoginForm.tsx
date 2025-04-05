@@ -19,7 +19,7 @@ const LoginForm = () => {
       setUser(response.data.user);
       router.push('/dashboard');
     } catch (error) {
-      console.error('Login failed:', error);
+      console.error('Login failed   :', error);
     }
   };
 
