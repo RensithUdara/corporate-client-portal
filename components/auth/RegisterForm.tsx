@@ -85,7 +85,10 @@ const RegisterForm = () => {
         <label className="block">Confirm Password</label>
         <input
           type="password"
-          {...register('confirmPassword', { required: 'Confirm Password is required', validate: (val) => val === watch('password') || 'Passwords do not match' })}
+          {...register('confirmPassword', { required: 
+            
+            
+            'Confirm Password is required', validate: (val) => val === watch('password') || 'Passwords do not match' })}
           className="w-full p-2 border rounded"
         />
         {errors.confirmPassword && <p className="text-red-500">{errors.confirmPassword.message}</p>}
